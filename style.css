@@ -20,10 +20,16 @@
     color: white;
     background: var(--background-color);
     border: 1px solid var(--border-color);
+    position: relative;
 }
 
 .nav-list-item:hover{
     background: var(--border-color);
+
+}
+
+.nav-list-item:hover > .nav-list-submenu{
+    display: block;
 }
 
 .nav-link {
@@ -33,4 +39,14 @@
     display: block;
     font-size: 1.4rem;
     min-width: 200px;
+}
+
+.nav-list-submenu {
+    position: absolute;
+    display: none;
+}
+
+.nav-list-submenu-bottom {
+    top: 100%;
+    left: 0;
 }
