@@ -39,6 +39,10 @@
     display: block;
     font-size: 1.4rem;
     min-width: 200px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .nav-list-submenu {
@@ -49,4 +53,9 @@
 .nav-list-submenu-bottom {
     top: 100%;
     left: 0;
+}
+
+.nav-list-submenu-right {
+    top: 0;
+    left: 100%;
 }
